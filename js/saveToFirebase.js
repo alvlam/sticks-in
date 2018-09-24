@@ -1,6 +1,7 @@
-function saveToFirebase(player) {
+function saveToFirebase(name, position) {
     var playerObject = {
-        player: player
+        name: name,
+        position: position
     };
 
     firebase.database().ref('players').push().set(playerObject)
@@ -12,4 +13,4 @@ function saveToFirebase(player) {
         });
 }
 
-saveToFirebase(player);
+saveToFirebase(name, position);
