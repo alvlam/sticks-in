@@ -38,7 +38,14 @@
   <!-- Add your site or application content here -->
   <h1>Sticks in!</h1>
 
-  <i>This is based on <a href="https://html5boilerplate.com/">HTML5 Boilerplate</a>.</i>
+  <form>
+    <h2>Add player:</h2>
+    <label for="inputName">Name</label>
+    <input type="name" id="inputName" placeholder="Player name" required autofocus>
+    <label for="inputPosition">Position</label>
+    <input type="position" id="inputPosition" placeholder="F/D">
+    <button type="submit">Add!</button>
+  </form>
   
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
